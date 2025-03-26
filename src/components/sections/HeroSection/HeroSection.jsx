@@ -51,18 +51,15 @@ const HeroSection = () => {
           {/* Projects button */}
           <motion.a
             className="btn-start"
-            href="Projects"
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            onClick={e => {
-              e.preventDefault();
-              document
-                .getElementById('Projects')
-                ?.scrollIntoView({ behavior: 'smooth' });
-            }}
           >
-            🎮 Projects
+            📝 View Resume
           </motion.a>
+
         </div>
       </div>
     </section>
